@@ -1,0 +1,170 @@
+/*  Basic Styling but it will help you  */
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+h1,h2{
+    color:aliceblue;
+    text-align: center;
+    
+}
+
+h1{
+    transition: 0s;
+    transform: scale(1.1);
+    font-size: 10px;
+    padding-top: 30px;
+
+}
+h2{
+    font-family: 'Tiro Kannada', serif;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    
+
+}
+
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    
+}
+
+
+.card_1{
+    background-color: rgba(66, 90, 230, 0.893)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+      
+
+}
+.card_2{
+    background-color: rgba(40, 185, 90, 0.837)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+
+}
+.card_3{
+    background-color: rgba(230, 230, 11, 0.837)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+
+}
+.card_4{
+    background-color: rgba(245, 87, 8, 0.837)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+
+}
+.card_5{
+    background-color: rgba(66, 90, 230, 0.893)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+
+}
+.card_6{
+    background-color: rgba(176, 176, 77, 0.837)!important;
+    font-family: 'Tiro Kannada', serif;
+    width: calc(76%/3);
+    margin:2%;
+    padding:2%;
+    text-align: center;
+    transition: 0.3s;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+
+}
+
+.card:hover{
+    transform:scale(1.1);
+} 
+
+.card__back{
+    transform:rotateY(180deg) scale(1.1);
+    background: #141414;
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.card__back span{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card__name{
+    font-size: 22px;
+    line-height:0.9;
+    font-weight: 900;
+    font-family: 'Tiro Kannada', serif;
+}
+
+.card__name span {
+    font-size: 14px;
+}
+
+.card__total {
+    font-size: 100px;
+    margin: 0 8px 0 0;
+    font-weight: 700;
+
+}
+
+.card__small {
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    padding:2px;
+}
+
+@media (max-width: 700px){
+    .card__total {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 700px){
+    .card{
+        width: 100%;
+        height: 290px;
+        margin-right: 0;
+        float: none;
+    }
+    .card .card__inner,
+    .card .card__back {
+        height: 290px;
+    }
+}
